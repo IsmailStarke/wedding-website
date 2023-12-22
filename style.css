@@ -41,10 +41,17 @@ body {
 
         /*Nav Items Styling*/
         .nav-item {
-            color: var(--white);
             font-weight: 600;
             font-size: 16px;
             text-transform: uppercase;
+        }
+
+        .nav-link {
+            color: var(--white);
+        }
+
+        .nav-link:hover {
+            color: var(--pearl);
         }
     }
     
@@ -57,7 +64,7 @@ body {
         /* Centered brand image */
         .navbar .navbar-brand {
             position: absolute;
-            left: 50%;
+            left: 45%;
             transform: translateX(-50%);
             width: 100px;
             height: 100px;
@@ -65,10 +72,18 @@ body {
 
         /*Nav Items Styling*/
         .nav-item {
-            color: var(--white);
+            text-align: center;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 26px;
             text-transform: uppercase;
+        }
+
+        .nav-link {
+            color: var(--white);
+        }
+
+        .nav-link:hover {
+            color: var(--pearl);
         }
     }
 
@@ -321,6 +336,7 @@ body {
         background-color: #080808;
         width: 300px;
     }
+
     .activities-heading {
         font-family: 'Alex Brush', cursive;
         font-size: 60px;
@@ -338,5 +354,75 @@ body {
         }
         .btn {
             font-size: 24px;
+        }
+    }
+
+
+    /*----------------------------------- Find Us -------------------------------------------*/
+    iframe {
+        width: 500px;
+        height: 500px;
+    }
+
+    .venue-info-heading {
+        font-family: 'Montserrat', serif;
+    }
+
+    .venue-info-details {
+        font-family: 'Montserrat', serif;
+    }
+
+    .gate-heading {
+        font-family: 'Alex Brush', cursive;
+        font-size: 60px;
+    }
+
+    .findus-heading {
+        font-family: 'Alex Brush', cursive;
+        font-size: 60px;
+    }    
+
+    @media (max-width: 992px) {
+        .gate-heading {
+            font-size: 75px;
+            font-family: 'Alex Brush', cursive;
+        }
+        .gate {
+            width: 100%;
+        }
+        .venue-info-heading {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 50px;
+            font-family: 'Montserrat', serif;
+        }
+        .venue-info-details {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Montserrat', serif;
+        }
+        /* Update the iframe styling */
+        iframe {
+            width: 100%; /* Adjust width */
+            height: 500px; /* Set your preferred height */
+            display: block; /* Ensure it takes the full width */
+            margin: 0 auto; /* Center the iframe horizontally */
+        }
+
+        /* Center the map container */
+        .col-md-12 iframe {
+            margin: 0 auto; /* Center the iframe horizontally */
+            display: block; /* Ensure it takes the full width */
+            width: 90%; /* Adjust width if necessary */
+        }
+        .findus-heading {
+            font-size: 75px;
+            font-family: 'Alex Brush', cursive;
+        }
+        .findus-notice-heading {
+            font-size: 30px;
+        }
+        .findus-notice {
+            font-size: 30px;
         }
     }
