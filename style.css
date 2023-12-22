@@ -343,6 +343,10 @@ body {
     }
 
     @media (max-width: 992px) {
+        .activities-heading {
+            font-family: 'Alex Brush', cursive;
+            font-size: 100px;
+        }
         .activities-label {
             font-size: 35px;
         }
@@ -384,7 +388,7 @@ body {
 
     @media (max-width: 992px) {
         .gate-heading {
-            font-size: 75px;
+            font-size: 100px;
             font-family: 'Alex Brush', cursive;
         }
         .gate {
@@ -416,7 +420,7 @@ body {
             width: 90%; /* Adjust width if necessary */
         }
         .findus-heading {
-            font-size: 75px;
+            font-size: 100px;
             font-family: 'Alex Brush', cursive;
         }
         .findus-notice-heading {
