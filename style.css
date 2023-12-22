@@ -128,7 +128,7 @@ body {
     }
 
     /*For Smaller Screens*/
-    @media (max-width: 980px) {
+    @media (max-width: 1200px) {
         .our-wedding-day {
             text-align: center;
         }
