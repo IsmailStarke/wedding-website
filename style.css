@@ -1,0 +1,226 @@
+    /*Defining Colors*/
+    :root {
+        --black: #080808;
+        --white: #F6FCFA;
+        --pearl: #E4DDC9;
+        --light-sage: #B3C6A2;
+        --dark-sage: #8DAA74;
+        --pastel-pink: #FFE7F1;
+        --fairy-tale: #F6CBDB;
+        --bone: #E9DDC9;
+        --gold: #D4AF37;
+        --dark-olive: #303C2A;
+        --ash-gray: #C1CCB7;
+        --lunar-green: #2E3D34;
+        --beige: #d6c3b8;
+    }
+
+    .navbar-custom-color {
+        background-color: var(--lunar-green);
+    }
+
+    /* Centered brand image */
+    .navbar .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-item {
+        color: var(--white);
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    /* Banner container */
+    .banner {
+        position: relative;
+        text-align: center;
+        color: white; /* Text color for overlay */
+        height: 500px; /* Set your preferred height */
+        overflow: hidden; /* Hide overflow if image is larger */
+    }
+
+    /* Image for the banner */
+    .banner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Maintain aspect ratio and cover container */
+        filter: brightness(50%) /* Adjust brightness to darken the image */
+    }
+
+    @keyframes floatIn {
+        from {
+        opacity: 0;
+        position: absolute;
+            top: 25%;
+        }
+        to {
+        opacity: 1;
+        position: absolute;
+            top: 50%;
+        }
+    }
+
+    /* Overlay text styles */
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: floatIn 2.3s forwards;
+    }
+
+    /* Style for the large, bold text */
+    .large-bold {
+        font-family: 'Georgia Pro', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .wedding-date, .wedding-address {
+        font-family: 'Georgia Pro', serif;
+        font-weight: 700;
+    }
+
+    body {
+        background-color: var(--white);
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+        height: 100vh; /* Set body to full viewport height */
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    .event-details-heading, .lodging-heading {
+        font-family: 'Alex Brush', cursive;
+        font-size: 60px;
+    }
+
+    .near-groom, .near-bride {
+        font-family: 'Montserrat', serif;
+    }
+
+    .event-images {
+        width: 70%;
+        height: auto;
+        object-fit: cover; /* Maintain aspect ratio and cover container */
+        filter: brightness(50%) /* Adjust brightness to darken the image */
+    }
+
+    .event-details-text {
+        font-family: 'Montserrat', serif;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+
+    .footer {
+        height: 70px;
+        background-color: var(--lunar-green);
+    }
+
+    /*----------------------------------- RSVP -------------------------------------------*/
+    /* Styles for the container holding the background image */
+    .background-image-container {
+        position: fixed; /* Fix the container */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/rsvp-image.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        z-index: -1;
+        filter: blur(2px);
+    }
+
+    .background-container {
+        position: fixed; /* Fix the container */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--beige);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        z-index: -1;
+        filter: blur(1px);
+    }
+
+    .rsvp {
+        font-family: 'Montserrat', serif;
+    }
+
+    .groom, .bride {
+        font-size: 27px;
+    }
+
+    .near-groom-details, .near-bride-details {
+        font-family: 'Montserrat', serif;
+        
+    }
+
+    hr {
+        background-color: #080808;
+        width: 300px;
+    }
+
+    .activities-heading {
+        font-family: 'Alex Brush', cursive;
+        font-size: 60px;
+    }
+
+    .activities-jhb {
+        font-size: 20px;
+    }
+
+    .overlay-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .close-btn:hover,
+    .close-btn:focus {
+        color: #ccc;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .overlay-content .navbar-nav {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .overlay-content .nav-item {
+        margin-bottom: 10px;
+    }

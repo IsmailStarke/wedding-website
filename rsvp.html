@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap CSS Link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <!-- Bootstrap JS Link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        
+        <!-- Bootstrap JS Bundle Link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome Link -->
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Georgia Pro Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georgia+Pro&display=swap">
+
+        <!-- Alex Brush Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+        <!-- Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div style="background-color: var(--lunar-green);"><small>&nbsp;</small></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom-color">
+            <div class="container">
+        
+              <!-- Left buttons -->
+              <ul class="navbar-nav mr-auto">
+
+                <!-- Event Details -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+
+                <!-- Our Story -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Story</a>
+                </li>
+
+                <!-- RSVP -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">RSVP</a>
+                </li>
+              </ul>
+        
+              <!-- Brand/logo centered -->
+              <a class="navbar-brand" href="#">
+                <img src="/images/wedding-logo.png" alt="wedding-logo.png" width="150">
+              </a>
+        
+              <!-- Right buttons -->
+              <ul class="navbar-nav ml-auto">
+
+                <!-- Accommodation -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./lodging.html">Lodging</a>
+                </li>
+
+                <!-- Things To Do -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./activities.html">Things to Do</a>
+                </li>
+
+                <!-- Find Us -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Find Us</a>
+                </li>
+              </ul>
+        
+            </div>
+        </nav>
+
+        <div style="background-color: var(--lunar-green);""><small>&nbsp;</small></div>        
+
+        <div class="background-image-container"></div>
+
+
+        <!-- RSVP Form -->
+        <div class="container h-auto mt-5" style="width:600px; background-color: var(--white); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);">
+            <form action="https://formsubmit.co/7ab8bde0f8e4c1049c18179af33043e4" method="POST">
+                <!-- <input type="hidden" name="_cc" value=""> -->
+                <input type="hidden" name="_subject" value="Wedding RSVP">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We have received your response.">
+                <div>&nbsp;</div>
+
+                <p class="h4 mb-4 mt-2 text-center rsvp"><b>RSVP</b></p>
+
+                <!-- Name -->
+                <div class="mb-3">
+                    <label class="form-label"><b>Full Name</b></label>
+                    <input name="Name" type="text" class="form-control mb-4" placeholder="John Doe" required />
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label class="form-label"><b>Email Address</b></label>
+                    <input name="Email" type="email" class="form-control" placeholder="johndoe@gmail.com" required>
+                    <small>Don't worry. Your personal details and messages will not be shared with anyone else.</small>
+                </div>
+                
+                <!-- Phone Number -->
+                <div class="mb-3">
+                    <label class="form-label"><b>Phone Number</b> <i>(Optional)</i></label>
+                    <input name="Phone" type="tel" class="form-control" />
+                    <small>RSVP the numbers on the invitation if prefer to speak to us directly</small>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label class="form-label"><b>Message</b></label>
+                    <textarea name="Message" class="form-control rounded-0" rows="3" placeholder="Please let us know how many people will be attending. And if you have any questions, feel free to ask" required></textarea>
+                </div>
+
+                <!-- Send button -->
+                <button class="btn btn-info btn-block" type="submit"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
+
+                <div class="mt-5">&nbsp;</div>
+            </form>
+        </div>
+
+        <!-------------------------------- Footer -------------------------------------->
+        <div class="footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-white mt-4"><b>Made By The Bride & Groom</b></p>
+                    </div>
+                    <div class="col text-right">
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
