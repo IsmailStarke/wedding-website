@@ -85,6 +85,10 @@ body {
         .nav-link:hover {
             color: var(--pearl);
         }
+
+        .active {
+            color: var(--pearl);
+        }
     }
 
     /* ------------------------------------- Background Image ---------------------------------- */
@@ -275,7 +279,7 @@ body {
         }
         .our-story {
             font-family: 'Montserrat', serif;
-            font-size: 35px;
+            font-size: 40px;
         }
     }
 
