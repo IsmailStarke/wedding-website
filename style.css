@@ -241,6 +241,8 @@ body {
             font-size: 30px;
         }
     }
+
+    /*----------------------------------- Lodging -------------------------------------------*/
     
     @media (min-width: 992px) {
         .near-groom, .near-bride {
@@ -264,7 +266,7 @@ body {
         }
     }
 
-      
+    /*----------------------------------- Footer -------------------------------------------*/  
     
     .footer {
         margin-top: auto;
@@ -318,53 +320,17 @@ body {
         font-size: 60px;
     }
 
-    .activities-jhb {
-        font-size: 20px;
-    }
-
-    .overlay-menu {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-    
-    .overlay-content {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    
-    .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-        cursor: pointer;
-        color: white;
-    }
-    
-    .close-btn:hover,
-    .close-btn:focus {
-        color: #ccc;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .overlay-content .navbar-nav {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .overlay-content .nav-item {
-        margin-bottom: 10px;
+    @media (max-width: 992px) {
+        .activities-label {
+            font-size: 35px;
+        }
+        .card-text {
+            font-size: 26px;
+        }
+        .card-title {
+            font-size: 28px;
+        }
+        .btn {
+            font-size: 24px;
+        }
     }
