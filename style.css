@@ -1,4 +1,14 @@
-    /*Defining Colors*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--white);
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+/*Defining Colors*/
     :root {
         --black: #080808;
         --white: #F6FCFA;
@@ -15,6 +25,9 @@
         --beige: #d6c3b8;
     }
 
+    /* ------------------------------------- Navigation Bar ---------------------------------- */
+
+    /*Navbar Color*/
     .navbar-custom-color {
         background-color: var(--lunar-green);
     }
@@ -26,6 +39,7 @@
         transform: translateX(-50%);
     }
 
+    /*Nav Items Styling*/
     .nav-item {
         color: var(--white);
         font-weight: 600;
@@ -33,6 +47,8 @@
         text-transform: uppercase;
     }
 
+
+    /* ------------------------------------- Background Image ---------------------------------- */
     /* Banner container */
     .banner {
         position: relative;
@@ -84,39 +100,73 @@
         font-weight: 700;
     }
 
-    body {
-        background-color: var(--white);
-        margin: 0; /* Remove default body margin */
-        padding: 0; /* Remove default body padding */
-        height: 100vh; /* Set body to full viewport height */
-        overflow-x: hidden; /* Hide horizontal overflow */
+
+
+    /* ------------------------------------- Event Details  ---------------------------------- */
+
+    /*For Larger Screens*/
+    @media (min-width: 767px) {
+        .event-details-heading, .lodging-heading {
+            font-family: 'Alex Brush', cursive;
+            font-size: 60px;
+        }
+
+        .event-images {
+            width: 70%;
+            height: auto;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            filter: brightness(50%) /* Adjust brightness to darken the image */
+        }
+
+        .event-details-text {
+            font-family: 'Montserrat', serif;
+        }
+
+        .details {
+            font-size: 18px;
+        }
     }
 
-    .event-details-heading, .lodging-heading {
-        font-family: 'Alex Brush', cursive;
-        font-size: 60px;
+    /*For Smaller Screens*/
+    @media (max-width: 787px) {
+        .our-wedding-day {
+            text-align: center;
+        }
+
+        .event-details-heading, .lodging-heading {
+            font-family: 'Alex Brush', cursive;
+            font-size: 60px;
+        }
+
+        .event-images {
+            width: 70%;
+            height: auto;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            filter: brightness(50%) /* Adjust brightness to darken the image */
+        }
+
+        .event-details-text {
+            font-family: 'Montserrat', serif;
+        }
+
+        .details {
+            font-size: 18px;
+        }
     }
+    
 
     .near-groom, .near-bride {
         font-family: 'Montserrat', serif;
     }
 
-    .event-images {
-        width: 70%;
-        height: auto;
-        object-fit: cover; /* Maintain aspect ratio and cover container */
-        filter: brightness(50%) /* Adjust brightness to darken the image */
-    }
+    
 
-    .event-details-text {
-        font-family: 'Montserrat', serif;
-    }
+    
 
-    .details {
-        font-size: 18px;
-    }
+    
 
     .footer {
+        margin-top: auto;
         height: 70px;
         background-color: var(--lunar-green);
     }
