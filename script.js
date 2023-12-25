@@ -12,13 +12,21 @@ var countdown = setInterval(function() {
 
     // Calculations for days, hours, minutes, and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var months = Math.floor(days / 30); // Calculate remaining months
 
-    // Display the countdown
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+    // Display the countdown based on remaining days and months
+    if (days === 60) {
+        document.getElementById("timer").innerHTML = months + " MONTHS LEFT!!!";
+    } else if (days === 30) {
+        document.getElementById("timer").innerHTML = "1 MONTH LEFT!";
+    } else {
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+    }
 
     // If the countdown is over, display the message
     if (distance < 0) {
@@ -27,18 +35,4 @@ var countdown = setInterval(function() {
     }
 }, 1000); // Update every 1 second
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const openNav = document.querySelector('.navbar-toggler');
-    const closeNav = document.querySelector('.close-btn');
-    const overlay = document.querySelector('.overlay-menu');
-
-    openNav.addEventListener('click', function () {
-        overlay.style.width = '100%';
-    });
-
-    closeNav.addEventListener('click', function () {
-        overlay.style.width = '0';
-    });
-});
-
+// Rest of your existing code remains unchanged...
